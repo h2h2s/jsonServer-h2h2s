@@ -185,11 +185,26 @@
         ]
       },
       {
-
+        "section_name": "Social History",
+        "questions": [
+          {
+            "question_text": "Smoking",
+            "answer": "Never"
+          },
+          {
+            "question_text": "Alcohol",
+            "answer": "Rarely"
+          },
+          {
+            "question_text": "Physical Activity",
+            "answer": "Missing"
+          },
+          {
+            "question_text": "Sleep",
+            "answer": "Yes"
+          }
+        ]
       }
     ]
-  }],
-  "profile 2": {
-    "name": "typicodesda sdfsdfgit "
-  }
+  }]
 }
