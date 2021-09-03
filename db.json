@@ -133,7 +133,59 @@
     }],
     "health_risk_assessment": [
       {
-        
+        "section_name": "Age and Anthropometry",
+        "questions": [
+          {
+            "question_text": "Weight",
+            "weight": 73.4,
+            "weight_unit": "KGs"
+          },
+          {
+            "question_text": "Height",
+            "weight": 174,
+            "weight_unit": "cms"
+          },
+          {
+            "question_text": "BMI",
+            "weight": 24.24
+          }
+        ]
+      },
+      {
+        "section_name": "Family History",
+        "questions": [
+          {
+            "question_text": "Diabetes",
+            "answer": "No"
+          },
+          {
+            "question_text": "Hypertension",
+            "answer": "No"
+          },
+          {
+            "question_text": "CVD",
+            "answer": "No"
+          },
+          {
+            "question_text": "Thyroid disorders",
+            "answer": "No"
+          },
+          {
+            "question_text": "Asthma or COPD",
+            "answer": "Yes"
+          },
+          {
+            "question_text": "Cancer",
+            "answer": "No"
+          },
+          {
+            "question_text": "Gynaecologic problems",
+            "answer": "No"
+          }
+        ]
+      },
+      {
+
       }
     ]
   }],
