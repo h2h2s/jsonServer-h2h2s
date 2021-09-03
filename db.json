@@ -10,7 +10,41 @@
     }
   ],
   "patient": {
-    "demography": "demography content 1",
+    "id": 1,
+    "demography": {
+      "name": "Shailab Singh",
+      "age": 25,
+      "sex": "Male",
+      "personal_ids": [{
+        "id": "123456789101",
+        "id_type": "Aadhar",
+        "verified_flag": ""
+      },{
+        "id": "",
+        "id_type": "Voter",
+        "verified_flag": ""
+      },{
+        "id": "",
+        "id_type": "UID",
+        "verified_flag": ""
+      }],
+      "insurance_scheme_data": {
+        "insurance_present_flag": "Yes",
+        "insurance_scheme_content": "This is a sample content"
+      },
+      "phone_details": [{
+        "phone_type": "Landline",
+        "": ""},{
+        "phone_type": "Mobile",
+        "": ""}],
+      "address_details": {
+        "detail": "",
+        "district": "",
+        "state": "",
+        "pincode": "",
+        "postal_area_name": ""
+      }
+    },
     "routine_healthcare_needs": "rountine healthcare needs content",
     "major_symptoms": "major sypmtoms content",
     "health_risk_assessment": ""
