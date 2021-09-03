@@ -1,5 +1,5 @@
 {
-  "posts": [
+  "users": [
     {
       "id": 1,
       "title": "reports 1"
@@ -9,10 +9,13 @@
       "title": "reports 2"
     }
   ],
-  "profile": {
-    "name": "typicode"
+  "patient": {
+    "demography": "demography content 1",
+    "routine_healthcare_needs": "rountine healthcare needs content",
+    "major_symptoms": "major sypmtoms content",
+    "health_risk_assessment": ""
   },
   "profile 2": {
-    "name": "typicodesda sdfsdf"
+    "name": "typicodesda sdfsdfgit "
   }
 }
