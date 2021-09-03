@@ -9,7 +9,7 @@
       "title": "reports 2"
     }
   ],
-  "patient": {
+  "patients": [{
     "id": 1,
     "demography": {
       "name": "Shailab Singh",
@@ -63,25 +63,80 @@
         "questtion_answer": "Yes"
       }
     ],
-    "major_symptoms": [
+    "major_symptoms": [{
+      "section_name": "Men and Women",
+      "questions": [
+          {
+            "question_text": "Does the patient have shortness of breath?",
+            "question_answer": "Yes"
+          },
+          {
+            "question_text": "Is the patient coughing for more than 2 weeks?",
+            "question_answer": "No"
+          },
+          {
+            "question_text": "Is blood coming in patient's sputum?",
+            "question_answer": "No"
+          }]
+      },{
+      "section_name": "Section 2",
+      "questions": [
+        {
+          "question_text": "Does the patient have history of fits?",
+          "question_answer": "Yes"
+        },
+        {
+          "question_text": "Does the patient have difficulty in opening the mouth?",
+          "question_answer": "No"
+        },
+        {
+          "question_text": "Does the patient have ulcers, patch, or growth in mouth not healed for > 2 weeks?",
+          "question_answer": "No"
+        },
+        {
+          "question_text": "Is there is a change in the tone of the voice?",
+          "question_answer": "No"
+        }
+    ]
+    },{
+      "section_name": "Only Women",
+      "questions": [
+        {
+          "question_text": "Does she have lump in the breast?",
+          "question_answer": "Yes"
+        },
+        {
+          "question_text": "Is Blood stained discharge comes from the nipple?",
+          "question_answer": "Yes"
+        },
+        {
+          "question_text": "Is there a change in the size of the breasts?",
+          "question_answer": "No"
+        },
+        {
+          "question_text": "Are there instances of bleeding between periods?",
+          "question_answer": "Yes"
+        },
+        {
+          "question_text": "Is there bleeding after menopause?",
+          "question_answer": "Yes"
+        },
+        {
+          "question_text": "Is there bleeding after intercourse?",
+          "question_answer": "Yes"
+        },
+        {
+          "question_text": "Does the patient experience foul smelling vaginal discharge?",
+          "question_answer": "Yes"
+        }
+      ]
+    }],
+    "health_risk_assessment": [
       {
-        "question_text": "Does the patient have history of fits?",
-        "question_answer": "Yes"
-      },
-      {
-        "question_text": "Does the patient have difficulty in opening the mouth?",
-        "question_answer": "No"
-      },
-      {
-        "question_text": "Does the patient have ulcers, patch, or growth in mouth not healed for > 2 weeks?",
-        "question_answer": "No"
-      },
-      {
-        "question_text": "Is there is a change in the tone of the voice?",
-        "question_answer": "No"
+        
       }
     ]
-  },
+  }],
   "profile 2": {
     "name": "typicodesda sdfsdfgit "
   }
