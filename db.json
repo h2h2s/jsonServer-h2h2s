@@ -45,9 +45,41 @@
         "postal_area_name": ""
       }
     },
-    "routine_healthcare_needs": "rountine healthcare needs content",
-    "major_symptoms": "major sypmtoms content",
-    "health_risk_assessment": ""
+    "routine_healthcare_needs": [
+      {
+        "question_text": "Is the patient applicable for reproductive and check health?",
+        "questtion_answer": "Yes"
+      },
+      {
+        "question_text": "Is the patient applicable for general sanitation?",
+        "questtion_answer": "Yes"
+      },
+      {
+        "question_text": "Does the patient have any illness and/or requires first aid",
+        "questtion_answer": "Yes"
+      }
+    ],
+    "major_symptoms": [
+      {
+        "question_text": "Does the patient have history of fits?",
+        "question_answer": "Yes"
+      },
+      {
+        "question_text": "Does the patient have difficulty in opening the mouth?",
+        "question_answer": "No"
+      },
+      {
+        "question_text": "Does the patient have ulcers, patch, or growth in mouth not healed for > 2 weeks?",
+        "question_answer": "No"
+      },
+      {
+        "question_text": "Is there is a change in the tone of the voice?",
+        "question_answer": "No"
+      }
+    ]
+      "history_of_fits": "",
+      "difficulty_in_opening_mouth": "There is difficulty in opening mouth"
+    }
   },
   "profile 2": {
     "name": "typicodesda sdfsdfgit "
