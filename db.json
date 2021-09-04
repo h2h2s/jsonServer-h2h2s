@@ -2,11 +2,265 @@
   "users": [
     {
       "id": 1,
-      "title": "reports 1"
+      "name": "Vivek Dhiman",
+      "phone": 9870989823,
+      "email": "sample@xyz.com",
+      "pincodes": [
+        201301,201302
+      ],
+      "facility_id": 1
+    }
+  ],
+  "facilities": [
+    {
+      "id": 1,
+      "facility_name": "Sample Facility",
+      "address": "PHC Health centre, 5, sample street",
+      "type": "sub-centre",
+      "covered_pincodes": [
+        201301,201302
+      ]
+    }
+  ],
+  "assessment_scoring_algos": [
+    {
+      "section_name": "Age",
+      "section_variable_id": "s001",
+      "age_ranges": [
+        {
+          "range_name": "<18 years",
+          "min_value": 0,
+          "max_value": 17.99,
+          "parametric_score": 1
+        },
+        {
+          "range_name": "18-39 years",
+          "min_value": 18,
+          "max_value": 39,
+          "parametric_score": 1
+        },
+        {
+          "range_name": "Missing",
+          "min_value": "",
+          "max_value": "",
+          "parametric_score": 1
+        },
+        {
+          "range_name": "40-59 years",
+          "min_value": 40,
+          "max_value": 59,
+          "parametric_score": 0.95
+        },
+        {
+          "range_name": "60-74 years",
+          "min_value": 60,
+          "max_value": 74,
+          "parametric_score": 0.8
+        },
+        {
+          "range_name": ">75 years",
+          "min_value": 75,
+          "max_value": 200,
+          "parametric_score": 0.7
+        }
+      ],
+      "parametric_weightage": 0.166666667
     },
     {
-      "id": 2,
-      "title": "reports 2"
+      "section_name": "BMI ranges",
+      "section_variable_id": "s002",
+      "parametric_weightage": 0.333333,
+      "bmi_ranges": [
+        {
+          "parametric_score": 0,
+          "parametric_status": "Underweight-3",
+          "criteria_min_value": 0,
+          "criteria_max_value": 15.99
+        },
+        {
+          "parametric_score": 0.25,
+          "parametric_status": "Underweight-2",
+          "criteria_min_value": 16,
+          "criteria_max_value": 16.99
+        },
+        {
+          "parametric_score": 0.5,
+          "parametric_status": "Underweight-1",
+          "criteria_min_value": 17,
+          "criteria_max_value": 18.49
+        },
+        {
+          "parametric_score": 1,
+          "parametric_status": "Normal",
+          "criteria_min_value": 18.5,
+          "criteria_max_value": 22.9
+        },
+        {
+          "parametric_score": 0.7,
+          "parametric_status": "Overweight-1",
+          "criteria_min_value": 23.0,
+          "criteria_max_value": 23.9
+        },
+        {
+          "parametric_score": 0.65,
+          "parametric_status": "Overweight-2",
+          "criteria_min_value": 24.0,
+          "criteria_max_value": 24.9
+        },
+        {
+          "parametric_score": 0.6,
+          "parametric_status": "Obese I-1",
+          "criteria_min_value": 25.0,
+          "criteria_max_value": 26.9
+        },
+        {
+          "parametric_score": 0.5,
+          "parametric_status": "Obese I-2",
+          "criteria_min_value": 27.0,
+          "criteria_max_value": 29.9
+        },
+        {
+          "parametric_score": 0.4,
+          "parametric_status": "Obese II-1",
+          "criteria_min_value": 30.0,
+          "criteria_max_value": 32.5
+        },
+        {
+          "parametric_score": 0.3,
+          "parametric_status": "Obese II-2",
+          "criteria_min_value": 32.6,
+          "criteria_max_value": 34.9
+        },
+        {
+          "parametric_score": 0.2,
+          "parametric_status": "Obese II-3",
+          "criteria_min_value": 35.0,
+          "criteria_max_value": 37.5
+        },
+        {
+          "parametric_score": 0.1,
+          "parametric_status": "Obese II-4",
+          "criteria_min_value": 37.6,
+          "criteria_max_value": 39.99
+        },
+        {
+          "parametric_score": 0,
+          "parametric_status": "Obese III",
+          "criteria_min_value": 40,
+          "criteria_max_value": 100
+        }
+      ]
+    },
+    {
+      "section_name": "Family history",
+      "section_variable_id": "s003",
+      "parametric_weightage": 0.166667,
+      "family_history_parameters": [
+        {
+          "parameter_name": "Diabetes",
+          "question_id": "q001",
+          "sub_parametric_score": {
+            "positive": 0,
+            "negative": 0.20,
+            "missing": ""
+          }
+        },
+        {
+          "parameter_name": "Hypertension",
+          "question_id": "q002",
+          "sub_parametric_score": {
+            "positive": 0,
+            "negative": 0.15,
+            "missing": ""
+          }
+        },
+        {
+          "parameter_name": "CVD",
+          "question_id": "q003",
+          "sub_parametric_score": {
+            "positive": 0,
+            "negative": 0.25,
+            "missing": ""
+          }
+        },
+        {
+          "parameter_name": "Thyroid disorders",
+          "question_id": "q004",
+          "sub_parametric_score": {
+            "positive": 0,
+            "negative": 0.10,
+            "missing": ""
+          }
+        },
+        {
+          "parameter_name": "Asthma or COPD",
+          "question_id": "q005",
+          "sub_parametric_score": {
+            "positive": 0,
+            "negative": 0.10,
+            "missing": ""
+          }
+        },
+        {
+          "parameter_name": "Cancer",
+          "question_id": "q006",
+          "sub_parametric_score": {
+            "positive": 0,
+            "negative": 0.15,
+            "missing": ""
+          }
+        },
+        {
+          "parameter_name": "Gynaecology problems",
+          "question_id": "q007",
+          "sub_parametric_score": {
+            "positive": 0,
+            "negative": 0.05,
+            "missing": ""
+          }
+        }
+      ]
+    },
+    {
+      "section_name": "Social history",
+      "section_variable_id": "s004",
+      "parametric_weightage": 0.33333,
+      "sub_parametric_scores": [
+        {
+          "question_id": "q001",
+          "sub_parameter_name": "Smoking",
+          "regular": 0,
+          "not_regular_smoking_history": 0.5,
+          "never": 1,
+          "missing": "",
+          "sub_parametric_score_weightage": 0.25
+        },
+        {
+          "question_id": "q002",
+          "sub_parameter_name": "Alcohol",
+          "regular": 0,
+          "not_regular_smoking_history": 0.5,
+          "never": 1,
+          "missing": "",
+          "sub_parametric_score_weightage": 0.25
+        },
+        {
+          "question_id": "q003",
+          "sub_parameter_name": "Physical Activity",
+          "no": 0,
+          "yes": 1,
+          "missing": "",
+          "sub_parametric_score_weightage": 0.25
+        },
+        {
+          "question_id": "q004",
+          "sub_parameter_name": "Sleep",
+          "no": 0,
+          "yes": 1,
+          "missing": "",
+          "sub_parametric_score_weightage": 0.25
+        }
+      ]
     }
   ],
   "patients": [{
@@ -52,15 +306,15 @@
     "routine_healthcare_needs": [
       {
         "question_text": "Is the patient applicable for reproductive and check health?",
-        "questtion_answer": "Yes"
+        "questtion_answer": ""
       },
       {
         "question_text": "Is the patient applicable for general sanitation?",
-        "questtion_answer": "Yes"
+        "questtion_answer": ""
       },
       {
         "question_text": "Does the patient have any illness and/or requires first aid",
-        "questtion_answer": "Yes"
+        "questtion_answer": ""
       }
     ],
     "major_symptoms": [{
@@ -68,34 +322,34 @@
       "questions": [
           {
             "question_text": "Does the patient have shortness of breath?",
-            "question_answer": "Yes"
+            "question_answer": ""
           },
           {
             "question_text": "Is the patient coughing for more than 2 weeks?",
-            "question_answer": "No"
+            "question_answer": ""
           },
           {
             "question_text": "Is blood coming in patient's sputum?",
-            "question_answer": "No"
+            "question_answer": ""
           }]
       },{
       "section_name": "Section 2",
       "questions": [
         {
           "question_text": "Does the patient have history of fits?",
-          "question_answer": "Yes"
+          "question_answer": ""
         },
         {
           "question_text": "Does the patient have difficulty in opening the mouth?",
-          "question_answer": "No"
+          "question_answer": ""
         },
         {
           "question_text": "Does the patient have ulcers, patch, or growth in mouth not healed for > 2 weeks?",
-          "question_answer": "No"
+          "question_answer": ""
         },
         {
           "question_text": "Is there is a change in the tone of the voice?",
-          "question_answer": "No"
+          "question_answer": ""
         }
     ]
     },{
@@ -103,31 +357,31 @@
       "questions": [
         {
           "question_text": "Does she have lump in the breast?",
-          "question_answer": "Yes"
+          "question_answer": ""
         },
         {
           "question_text": "Is Blood stained discharge comes from the nipple?",
-          "question_answer": "Yes"
+          "question_answer": ""
         },
         {
           "question_text": "Is there a change in the size of the breasts?",
-          "question_answer": "No"
+          "question_answer": ""
         },
         {
           "question_text": "Are there instances of bleeding between periods?",
-          "question_answer": "Yes"
+          "question_answer": ""
         },
         {
           "question_text": "Is there bleeding after menopause?",
-          "question_answer": "Yes"
+          "question_answer": ""
         },
         {
           "question_text": "Is there bleeding after intercourse?",
-          "question_answer": "Yes"
+          "question_answer": ""
         },
         {
           "question_text": "Does the patient experience foul smelling vaginal discharge?",
-          "question_answer": "Yes"
+          "question_answer": ""
         }
       ]
     }],
@@ -136,72 +390,91 @@
         "section_name": "Age and Anthropometry",
         "questions": [
           {
+            "question_text": "Age",
+            "section_variable_id": "s001"
+          },
+          {
             "question_text": "Weight",
             "weight": 73.4,
             "weight_unit": "KGs"
           },
           {
             "question_text": "Height",
-            "weight": 174,
+            "height": 174,
             "weight_unit": "cms"
           },
           {
             "question_text": "BMI",
-            "weight": 24.24
+            "weight": 24.24,
+            "section_variable_id": "s002"
           }
         ]
       },
       {
         "section_name": "Family History",
+        "section_variable_id": "s003",
         "questions": [
           {
             "question_text": "Diabetes",
-            "answer": "No"
+            "answer": "",
+            "question_variable_id": "q001"
           },
           {
             "question_text": "Hypertension",
-            "answer": "No"
+            "answer": "",
+            "question_variable_id": "q002"
           },
           {
             "question_text": "CVD",
-            "answer": "No"
+            "answer": "",
+            "question_variable_id": "q003"
           },
           {
             "question_text": "Thyroid disorders",
-            "answer": "No"
+            "answer": "",
+            "question_variable_id": "q004"
           },
           {
             "question_text": "Asthma or COPD",
-            "answer": "Yes"
+            "answer": "",
+            "question_variable_id": "q005"
           },
           {
             "question_text": "Cancer",
-            "answer": "No"
+            "answer": "",
+            "question_variable_id": "q006"
           },
           {
             "question_text": "Gynaecologic problems",
-            "answer": "No"
+            "answer": "",
+            "question_variable_id": "q007"
           }
         ]
       },
       {
         "section_name": "Social History",
+        "section_variable_id": "s004",
         "questions": [
           {
+            
             "question_text": "Smoking",
-            "answer": "Never"
+            "answer": "",
+            "question_variable_id": "q001"
           },
           {
             "question_text": "Alcohol",
-            "answer": "Rarely"
+            "answer": "",
+            "question_variable_id": "q002"
           },
           {
             "question_text": "Physical Activity",
-            "answer": "Missing"
+            "answer": "",
+            "question_variable_id": "q003"
           },
           {
             "question_text": "Sleep",
-            "answer": "Yes"
+            "answer": "",
+            "question_variable_id": "q004"
           }
         ]
       }
